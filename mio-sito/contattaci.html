@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contattaci - Da Michele Bernati</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="menu.html" class="menu-link">🍕 Vai al Menù</a>
+    </div>
+    <h1>Pizzeria Da Michele Bernati</h1>
+    <p>Contattaci o prenota il tuo tavolo</p>
+  </header>
+
+  <!-- Navigazione -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="chi-siamo.html">Chi siamo</a>
+    <a href="menu.html">Menù</a>
+    <a href="contattaci.html">Contattaci</a>
+  </nav>
+
+  <!-- Contenuto -->
+  <main>
+    <!-- Informazioni di contatto -->
+    <section>
+      <h2>📞 I nostri contatti</h2>
+      <p><strong>📍 Indirizzo:</strong> Corso Alcide De Gasperi, 389 – Bari</p>
+      <p><strong>📞 Telefono:</strong> 377 520 5995</p>
+      <p><strong>📧 Email:</strong> info@damichelebernati.it</p>
+      <p><strong>🕒 Orari:</strong> Lun-Dom 12:00–15:00 / 19:00–23:30</p>
+    </section>
+
+    <!-- Mappa -->
+    <section>
+      <h2>📍 Dove siamo</h2>
+      <iframe
+        src="https://www.google.com/maps?q=Corso+Alcide+De+Gasperi+389+Bari&output=embed"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- Modulo prenotazione -->
+    <section>
+      <h2>📅 Prenota un tavolo</h2>
+      <form id="prenotazione">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="ora">Ora</label>
+        <input type="time" id="ora" name="ora" required>
+
+        <label for="persone">Numero di persone</label>
+        <input type="number" id="persone" name="persone" min="1" required>
+
+        <button type="submit">Prenota ora</button>
+      </form>
+
+      <div id="conferma"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pizzeria Da Michele Bernati. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<script src="script.js"></script>
